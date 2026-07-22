@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images (3).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.sinopse {
+    /* O fundo DEVE ser semi-transparente para o efeito aparecer (use rgba) */
+    background-color: rgba(240, 240, 240, 0.5); 
+    
+    /* ESSA É A LINHA MÁGICA: ela borra o que está POR TRÁS da janela */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Garante que funciona no Safari/Apple */
+
+    /* Suas outras configurações de tamanho e estilo */
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.btn-pilares {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2ec4b6;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: ease;
+}
+
+.btn-pilares:hover {
+  background-color: #20a498;
+}
+
+
