@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Imagem de fundo: o skyline da cidade com parque de image_0.png */
+    background-image: url("images (3).jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.sinopse {
+    /* Efeito Glassmorphism: mais transparente e nítido */
+    background-color: rgba(240, 240, 240, 0.4); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.btn-pilares {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2ec4b6; /* Cor teal original */
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  /* Transição de cor e sombra no hover */
+  transition: all 0.3s ease;
+}
+
+.btn-pilares:hover {
+  background-color: #20a498;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
